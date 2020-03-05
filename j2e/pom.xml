@@ -5,9 +5,9 @@
     
     <modelVersion>4.0.0</modelVersion>
     <groupId>fr.unice.polytech.isa</groupId>
-    <artifactId>DD-ComponentA</artifactId>
+    <artifactId>j2e</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>ISA :: Drone Delivery :: ComposentA</name>
+    <name>ISA :: Drone Delivery :: j2e</name>
 
     <build>
         <plugins>

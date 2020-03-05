@@ -20,7 +20,7 @@
   </dependencies>
 
   <modules>
-    <module>DD-ComponentA</module>
+    <module>j2e</module>
     <module>DD-ComponentB</module>
     <module>DD-ComponentC</module>
   </modules>
