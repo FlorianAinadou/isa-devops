@@ -1,9 +1,6 @@
-package package1;
+package entities;
 
-import package1.ColisState;
-import package1.Carrier;
-
-public class Colis 
+public class Colis
 {
     private String reference;
     
