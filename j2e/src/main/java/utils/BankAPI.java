@@ -1,5 +1,6 @@
 package utils;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 import exceptions.ExternalPartnerException;
 import org.apache.cxf.jaxrs.client.WebClient;
@@ -17,9 +18,9 @@ public class BankAPI {
 
 	public BankAPI() { this("localhost", "9090"); }
 
-	public boolean performPayment(Customer customer, double value) throws ExternalPartnerException {
+	public boolean performPayment(String hello) throws ExternalPartnerException, JSONException {
 		// Building payment request
-		JSONObject request = new JSONObject().put("CreditCard", customer.getCreditCard()).put("Amount", value);
+		JSONObject request = new JSONObject().put("Message", "hello");
 
 		// Sending a Payment request to the mailbox
 		Integer id;
