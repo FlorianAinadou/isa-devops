@@ -21,8 +21,8 @@
 
   <modules>
     <module>j2e</module>
-    <module>DD-ComponentB</module>
-    <module>DD-ComponentC</module>
+    <module>front</module>
+    <module>dotNet</module>
   </modules>
 
 </project>
