@@ -8,7 +8,6 @@
     <artifactId>dotNet</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>ISA :: Drone Delivery :: dotNet</name>
-    <packaging>pom</packaging>
 
     <build>
         <plugins>
@@ -25,20 +24,15 @@
 
     <dependencies>
         <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>4.12</version>
-        <scope>test</scope>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
-        <groupId>fr.unice.polytech.isa</groupId>
-        <artifactId>j2e</artifactId>
-        <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-        <groupId>fr.unice.polytech.isa</groupId>
-        <artifactId>front</artifactId>
-        <version>1.0-SNAPSHOT</version>
+            <groupId>fr.unice.polytech.isa</groupId>
+            <artifactId>j2e</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
