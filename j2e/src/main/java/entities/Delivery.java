@@ -1,10 +1,7 @@
-package package1;
+package entities;
 
 import java.time.LocalDateTime;
 import java.util.Optional;
-
-import package1.Colis;
-import package1.Drone;
 
 public class Delivery 
 {

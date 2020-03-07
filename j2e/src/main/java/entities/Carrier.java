@@ -1,6 +1,4 @@
-package package1;
-
-import package1.Colis;
+package entities;
 
 import java.util.HashSet;
 
