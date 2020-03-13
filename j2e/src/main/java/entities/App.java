@@ -1,4 +1,4 @@
-package package1;
+package entities;
 
 /**
  * Hello world!
@@ -8,6 +8,6 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World! ComponentC" );
+        System.out.println( "Hello World! ComponentA" );
     }
 }

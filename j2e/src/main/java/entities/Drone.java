@@ -1,9 +1,6 @@
-package package1;
+package entities;
 
 import java.util.Optional;
-
-import package1.Colis;
-import package1.DroneLocation;
 
 public class Drone 
 {
