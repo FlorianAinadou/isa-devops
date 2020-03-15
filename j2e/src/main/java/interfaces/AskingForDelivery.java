@@ -1,9 +1,8 @@
 package interfaces;
 
-import entities.Colis;
+import entities.Package;
 import entities.Delivery;
 
 public interface AskingForDelivery {
-
-    Delivery createDelivery(Colis colis);
+    Delivery createDelivery(Package aPackage);
 }
