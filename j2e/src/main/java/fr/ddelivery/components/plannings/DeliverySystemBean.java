@@ -1,16 +1,16 @@
 package fr.ddelivery.components.plannings;
 
 
-import fr.ddelivery.entities.Colis;
 import fr.ddelivery.entities.Delivery;
 import fr.ddelivery.entities.Parcel;
 import fr.ddelivery.interfaces.DeliverySystem;
-import fr.ddelivery.interfaces.Planning;
 import fr.ddelivery.utils.Database;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Stateless(name = "planning-stateless")
 public class DeliverySystemBean extends AbstractDeliverySystemBean implements DeliverySystem {
@@ -36,7 +36,15 @@ public class DeliverySystemBean extends AbstractDeliverySystemBean implements De
     @Override
     public Delivery createDelivery() {
         LocalDateTime localDateTime = LocalDateTime.now();
-        return new Delivery("address", localDateTime, new Colis("The heart must go on"));
+        Delivery delivery = new Delivery("address", localDateTime, new Parcel("1"));
+        addDelivery(delivery);
+        return delivery;
 
+    }
+
+    @Override
+    public List<Delivery> getDailyDeliveries() {
+        List<Delivery> deliveries = new ArrayList<>(database.getDeliveriesList().values());
+        return deliveries;
     }
 }

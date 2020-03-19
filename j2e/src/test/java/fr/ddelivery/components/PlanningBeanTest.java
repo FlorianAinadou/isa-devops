@@ -1,7 +1,6 @@
 package fr.ddelivery.components;
 
 import fr.ddelivery.components.plannings.DeliverySystemBean;
-import fr.ddelivery.entities.Colis;
 import fr.ddelivery.entities.Delivery;
 import fr.ddelivery.interfaces.Planning;
 import org.jboss.arquillian.container.test.api.Deployment;

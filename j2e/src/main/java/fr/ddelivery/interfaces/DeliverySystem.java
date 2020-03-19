@@ -6,6 +6,7 @@ import fr.ddelivery.entities.Delivery;
 import fr.ddelivery.entities.Parcel;
 
 import javax.ejb.Local;
+import java.util.List;
 
 
 @Local
@@ -14,5 +15,7 @@ public interface DeliverySystem {
     Parcel getParcel(String packageReference);
     void initDatabase();
     Delivery createDelivery();
+
+    List<Delivery> getDailyDeliveries();
 
 }

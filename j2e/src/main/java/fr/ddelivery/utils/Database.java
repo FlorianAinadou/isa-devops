@@ -46,8 +46,7 @@ public class Database {
     }
 
     public void initDatabase(){
-        Carrier carrier= new Carrier();
-        Parcel p= new Parcel("abcd", ParcelState.stored, carrier );
+        Parcel p= new Parcel("abcd");
         availablePackages.put("abcd", p);
     }
 }

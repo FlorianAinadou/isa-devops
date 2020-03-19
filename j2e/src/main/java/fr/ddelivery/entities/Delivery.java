@@ -9,14 +9,14 @@ public class Delivery
     private String address;
     private LocalDateTime date;
 
-    private Colis colis;
+    private Parcel parcel;
     private Optional<Drone> drone;
 
-    public Delivery(String address, LocalDateTime date, Colis colis) {
+    public Delivery(String address, LocalDateTime date, Parcel parcel) {
         this.id = 1;
         this.address = address;
         this.date = date;
-        this.colis = colis;
+        this.parcel = parcel;
     }
 
     public String getAddress() {
@@ -31,7 +31,7 @@ public class Delivery
         return date;
     }
 
-    public Colis getColis() {
-        return colis;
+    public Parcel getParcel() {
+        return parcel;
     }
 }

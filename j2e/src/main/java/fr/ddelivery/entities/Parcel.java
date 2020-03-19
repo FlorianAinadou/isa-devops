@@ -6,10 +6,10 @@ public class Parcel
     private final ParcelState parcelState;
     private final Carrier carrier;
 
-    public Parcel(String reference, ParcelState parcelState, Carrier carrier){
+    public Parcel(String reference){
         this.reference = reference;
-        this.parcelState = parcelState;
-        this.carrier = carrier;
+        this.parcelState = ParcelState.stored;
+        this.carrier = new Carrier(1);
 
     }
 

@@ -4,7 +4,9 @@ import java.util.HashSet;
 
 public class Carrier 
 {
-    private String id;
+    private int id;
 
-
+    public Carrier(int id) {
+        this.id = id;
+    }
 }
