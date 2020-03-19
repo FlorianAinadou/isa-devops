@@ -1,4 +1,4 @@
-package entities;
+package fr.ddelivery.entities;
 
 import java.time.LocalDate;
 import java.util.HashSet;

@@ -1,4 +1,4 @@
-package entities;
+package fr.ddelivery.entities;
 
 /**
  * Hello world!

@@ -1,10 +1,10 @@
 package fr.ddelivery.components;
-import fr.ddelivery.PlanningDelivery;
+import fr.ddelivery.Planning;
 
 import javax.ejb.Stateless;
 
 @Stateless
-public class PlanningBean implements PlanningDelivery {
+public class PlanningBean implements Planning {
 
 
     protected String mess ="Hello";

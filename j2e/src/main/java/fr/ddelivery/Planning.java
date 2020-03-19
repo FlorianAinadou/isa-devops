@@ -6,7 +6,7 @@ import javax.ejb.Local;
 
 
 @Local
-public interface PlanningDelivery {
+public interface Planning {
 
     String sendHello();
 

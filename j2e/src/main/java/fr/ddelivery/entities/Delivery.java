@@ -1,4 +1,4 @@
-package entities;
+package fr.ddelivery.entities;
 
 import java.time.LocalDateTime;
 import java.util.Optional;
