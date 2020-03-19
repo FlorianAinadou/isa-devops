@@ -55,10 +55,10 @@
                             <sourceRoot>${basedir}/src/main/java/</sourceRoot>
                             <wsdlOptions>
                                 <wsdlOption>
-                                    <wsdl>${basedir}/src/main/resources/PlanningWebServiceImpl.wsdl</wsdl>
+                                    <wsdl>${basedir}/src/main/resources/DeliverySystemWebServiceImpl.wsdl</wsdl>
                                     <extraargs>
                                         <extraarg>-p</extraarg>
-                                        <extraarg>http://localhost:8080=stubs.plannings
+                                        <extraarg>http://localhost:8080=stubs.delivery
                                         </extraarg>
                                     </extraargs>
                                 </wsdlOption>

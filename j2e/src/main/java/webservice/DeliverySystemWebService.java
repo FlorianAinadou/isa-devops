@@ -10,7 +10,7 @@ import javax.jws.WebService;
 import java.util.Date;
 
 @WebService(targetNamespace = "http://localhost:8080")
-public interface PlanningWebService {
+public interface DeliverySystemWebService {
 
     @WebMethod
     @WebResult(name = "parcel")

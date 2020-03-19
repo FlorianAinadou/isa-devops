@@ -8,7 +8,7 @@ import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
 @Stateless(name = "planning-stateless")
-public class PlanningStateLess extends AbstractPlanningBean {
+public class DeliverySystemStateLess extends AbstractDeliverySystemBean {
 
     @EJB Database database;
 

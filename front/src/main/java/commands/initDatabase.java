@@ -1,5 +1,6 @@
 package commands;
 
+
 import api.PublicAPI;
 import cli.framework.Command;
 
@@ -11,7 +12,7 @@ public class initDatabase extends Command<PublicAPI> {
 
     @Override
     public void execute() throws Exception {
-        shell.system.planningWebService.initDatabase();
+        shell.system.deliverySystemWebService.initDatabase();
     }
 
     @Override

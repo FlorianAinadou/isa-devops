@@ -1,10 +1,9 @@
 package components.plannings;
 
-import components.Planning;
+import components.DeliverySystem;
 import entities.Delivery;
-import entities.Parcel;
 
-public abstract class AbstractPlanningBean implements Planning {
+public abstract class AbstractDeliverySystemBean implements DeliverySystem {
 
 
     @Override

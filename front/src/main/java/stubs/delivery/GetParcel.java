@@ -1,5 +1,5 @@
 
-package stubs.plannings;
+package stubs.delivery;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -7,16 +7,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for getParcelResponse complex type.
+ * <p>Java class for getParcel complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="getParcelResponse">
+ * &lt;complexType name="getParcel">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="parcel" type="{http://localhost:8080}parcel" minOccurs="0"/>
+ *         &lt;element name="parcelReference" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -26,35 +26,35 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "getParcelResponse", propOrder = {
-    "parcel"
+@XmlType(name = "getParcel", propOrder = {
+    "parcelReference"
 })
-public class GetParcelResponse {
+public class GetParcel {
 
-    protected Parcel parcel;
+    protected String parcelReference;
 
     /**
-     * Gets the value of the parcel property.
+     * Gets the value of the parcelReference property.
      * 
      * @return
      *     possible object is
-     *     {@link Parcel }
+     *     {@link String }
      *     
      */
-    public Parcel getParcel() {
-        return parcel;
+    public String getParcelReference() {
+        return parcelReference;
     }
 
     /**
-     * Sets the value of the parcel property.
+     * Sets the value of the parcelReference property.
      * 
      * @param value
      *     allowed object is
-     *     {@link Parcel }
+     *     {@link String }
      *     
      */
-    public void setParcel(Parcel value) {
-        this.parcel = value;
+    public void setParcelReference(String value) {
+        this.parcelReference = value;
     }
 
 }

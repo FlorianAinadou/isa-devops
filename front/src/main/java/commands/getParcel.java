@@ -1,5 +1,6 @@
 package commands;
 
+
 import api.PublicAPI;
 import cli.framework.Command;
 
@@ -17,7 +18,7 @@ public class getParcel extends Command<PublicAPI> {
     @Override
     public void execute() throws Exception {
         try {
-            System.out.println(shell.system.planningWebService.getParcel(reference));
+            System.out.println(shell.system.deliverySystemWebService.getParcel(reference));
         } catch (Exception e) {
             System.out.println("Not available");
         }

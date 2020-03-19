@@ -27,12 +27,7 @@ public class Database {
     public Map<Integer, Delivery> getDeliveriesList() {
         return deliveriesList;
     }
-
-    public Database(){
-        Carrier carrier= new Carrier();
-        Parcel p= new Parcel("abcd", ParcelState.stored, carrier );
-        availablePackages.put("abcd", p);
-    }
+    
 
     public void addDelivery(Delivery delivery){
         deliveriesList.put(nbDelivery, delivery);

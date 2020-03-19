@@ -8,7 +8,7 @@ import javax.ejb.Local;
 
 
 @Local
-public interface Planning {
+public interface DeliverySystem {
     boolean addDelivery(Delivery delivery);
     Parcel getParcel(String packageReference);
     void initDatabase();

@@ -1,6 +1,6 @@
 package webservice;
 
-import components.Planning;
+import components.DeliverySystem;
 import entities.Parcel;
 
 import javax.ejb.EJB;
@@ -9,18 +9,19 @@ import javax.jws.WebService;
 
 @WebService(targetNamespace = "http://localhost:8080")
 @Stateless(name = "PlanningWs")
-public class PlanningWebServiceImpl implements PlanningWebService {
+public class DeliverySystemWebServiceImpl implements DeliverySystemWebService {
 
-    @EJB(name = "stateless-planning") Planning planning;
+    @EJB(name = "stateless-planning")
+    DeliverySystem deliverySystem;
 
     @Override
     public Parcel getParcel(String packageReference) {
-       return planning.getParcel(packageReference);
+       return deliverySystem.getParcel(packageReference);
     }
 
     @Override
     public void initDatabase() {
         System.out.println("a\n");
-        planning.initDatabase();
+        deliverySystem.initDatabase();
     }
 }

@@ -1,21 +1,22 @@
 package api;
 
 
-import stubs.plannings.PlanningWebService;
-import stubs.plannings.PlanningWebServiceImplService;
+import stubs.delivery.DeliverySystemWebService;
+import stubs.delivery.DeliverySystemWebServiceImplService;
+
 
 import javax.xml.ws.BindingProvider;
 import java.net.URL;
 
 public class PublicAPI {
 
-    public PlanningWebService planningWebService;
+    public DeliverySystemWebService deliverySystemWebService;
 
     public PublicAPI(String host, String port){
         URL wsdlLocation = PublicAPI.class.getResource("/PlanningWebServiceImpl.wsdl");
-        PlanningWebServiceImplService factory = new PlanningWebServiceImplService();
-        planningWebService= factory.getPlanningWebServiceImplPort();
+        DeliverySystemWebServiceImplService factory = new DeliverySystemWebServiceImplService();
+        deliverySystemWebService = factory.getDeliverySystemWebServiceImplPort();
         String address= "http://" + host + ":" + port + "/j2e-1.0-SNAPSHOT/webservices/PlanningWs" ;
-        ((BindingProvider)planningWebService).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, address);
+        ((BindingProvider) deliverySystemWebService).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, address);
     }
 }
