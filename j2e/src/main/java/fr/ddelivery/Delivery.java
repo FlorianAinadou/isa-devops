@@ -8,6 +8,6 @@ import javax.ejb.Local;
 @Local
 public interface Delivery {
 
-    void receiveHello();
+    String receiveHello();
 
 }

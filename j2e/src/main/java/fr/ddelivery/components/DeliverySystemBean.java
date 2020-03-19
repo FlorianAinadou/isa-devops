@@ -7,16 +7,17 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import javax.ejb.EJB;
+import javax.ejb.Stateless;
 
+@Stateless
 public class DeliverySystemBean implements Delivery {
 
     @EJB
     protected PlanningDelivery planner;
 
     @Override
-    public void receiveHello() {
-        String test = planner.sendHello();
-        Logger log = Logger.getLogger(DeliverySystemBean.class.getName());
-        log.log(Level.WARNING,test);
+    public String receiveHello() {
+        return planner.sendHello();
+
     }
 }
