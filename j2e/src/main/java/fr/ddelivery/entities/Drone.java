@@ -7,6 +7,6 @@ public class Drone
     private String reference;
     private int flightTime;
 
-    private Optional<Colis> colis;
+    private Optional<Parcel> colis;
     private DroneLocation droneLocation;
 }

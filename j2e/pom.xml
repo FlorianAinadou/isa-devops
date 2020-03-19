@@ -41,7 +41,15 @@
                     <mainClass>package1.App</mainClass>
                 </configuration>
             </plugin>
-
+		<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${versions.maven.compiler}</version>
+                <configuration>
+                    <source>${versions.java}</source>
+                    <target>${versions.java}</target>
+                </configuration>
+            </plugin>
         <plugin>
                 <groupId>org.apache.tomee.maven</groupId>
                 <artifactId>tomee-maven-plugin</artifactId>
@@ -139,6 +147,7 @@
             <version>${versions.tomee}</version>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
     <parent>

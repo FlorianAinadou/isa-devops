@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="76f2efeb-235c-44ce-92cb-68880caca40b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../dotNet/dotNet.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/front.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/main/java/api/PublicAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/main/java/cli/framework/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/main/java/cli/framework/Shell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/main/java/commands/getParcel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/main/java/commands/initDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/main/java/stubs/delivery/DeliverySystemWebService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/main/java/stubs/delivery/DeliverySystemWebServiceImplService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/main/java/stubs/delivery/GetParcel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/main/java/stubs/delivery/GetParcelResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/main/java/stubs/delivery/InitDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/main/java/stubs/delivery/InitDatabaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/main/java/stubs/delivery/ObjectFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/main/java/stubs/delivery/Parcel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/main/java/stubs/delivery/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front/src/main/resources/DeliverySystemWebServiceImpl.wsdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/j2e.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/ddelivery/components/plannings/AbstractDeliverySystemBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/ddelivery/components/plannings/DeliverySystemBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/ddelivery/entities/Parcel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/ddelivery/entities/ParcelState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/ddelivery/utils/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/ddelivery/webservice/DeliverySystemWebService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/ddelivery/webservice/DeliverySystemWebServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/ddelivery/webservice/DeliverySystemWebServiceImpl.wsdl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dotNet/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dotNet/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dotNet/src/main/java/package1/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dotNet/src/main/java/entities/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dotNet/src/test/java/package1/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dotNet/src/test/java/entities/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../front/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/main/java/package1/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/test/java/entities/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/test/java/entities/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/test/java/package1/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/example/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ddelivery/example/HelloWorld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ddelivery/DeliverySystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ddelivery/interfaces/DeliverySystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ddelivery/Planning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ddelivery/interfaces/Planning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ddelivery/components/DeliverySystemSystemBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ddelivery/components/PlanningBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ddelivery/components/PlanningBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ddelivery/entities/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ddelivery/entities/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ddelivery/entities/Carrier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ddelivery/entities/Carrier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ddelivery/entities/Colis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ddelivery/entities/Colis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ddelivery/entities/ColisState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ddelivery/entities/ColisState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ddelivery/entities/Delivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ddelivery/entities/Delivery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ddelivery/entities/Drone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ddelivery/entities/Drone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ddelivery/entities/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ddelivery/entities/Invoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/ddelivery/package1/webservice/BillCreatorWebService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/ddelivery/package1/webservice/BillCreatorWebService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fr/ddelivery/components/PlanningBeanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/ddelivery/components/PlanningBeanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Arquillian JUnit Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\user\Documents\projet-isa-devops-20-team-j-20\j2e\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Z4CwgvLDZXGJt8Fi81Zaifu3Sa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584372146627" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../4A_ISA_TheCookieFactory/j2e" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="fr.ddelivery.components" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="fr.ddelivery.components" />
+      <recent name="fr.ddelivery" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Documents\projet-isa-devops-20-team-j-20\j2e\src\main\java\fr\ddelivery\interfaces" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Documents\projet-isa-devops-20-team-j-20\j2e\src\main\java\fr\ddelivery" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="DeliverySystemSystemBeanTest" type="ArquillianJUnit" factoryName="" temporary="true" nameIsGenerated="true">
+      <module name="j2e" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.ddelivery.components.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="PACKAGE_NAME" value="fr.ddelivery.components" />
+      <option name="MAIN_CLASS_NAME" value="fr.ddelivery.components.DeliverySystemSystemBeanTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Arquillian JUnit.DeliverySystemSystemBeanTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="76f2efeb-235c-44ce-92cb-68880caca40b" name="Default Changelist" comment="" />
+      <created>1584089219973</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584089219973</updated>
+      <workItem from="1584089247863" duration="102000" />
+      <workItem from="1584089381539" duration="2630000" />
+      <workItem from="1584092251227" duration="6208000" />
+      <workItem from="1584552582373" duration="21166000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="234" y="0" key="#Arquillian_Containers" timestamp="1584554785405">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="234" y="0" key="#Arquillian_Containers/0.0.1280.680@0.0.1280.680" timestamp="1584554785405" />
+    <state x="238" y="0" key="#DeliverySystemBeanTest" timestamp="1584554860086">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="238" y="0" key="#DeliverySystemBeanTest/0.0.1280.680@0.0.1280.680" timestamp="1584554860086" />
+    <state x="233" y="0" key="#Inspections" timestamp="1584651718087">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="0" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1584651718087" />
+    <state x="233" y="0" key="#Project_Structure" timestamp="1584092063080">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1584092063080" />
+    <state x="95" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584091814441">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="95" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1584091814441" />
+    <state x="405" y="143" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584552943545">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="405" y="143" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1584552943545" />
+    <state x="815" y="83" key="#com.intellij.ide.util.MemberChooser" timestamp="1584650048123">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="815" y="83" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1584650048123" />
+    <state x="271" y="29" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1584091969332">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="271" y="29" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1280.680@0.0.1280.680" timestamp="1584091969332" />
+    <state x="490" y="229" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584552659058">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="490" y="229" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.680@0.0.1280.680" timestamp="1584552659058" />
+    <state x="260" y="266" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1584648587840">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="260" y="266" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.680@0.0.1280.680" timestamp="1584648587840" />
+    <state x="438" y="221" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1584648590566">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="438" y="221" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.680@0.0.1280.680" timestamp="1584648590566" />
+    <state x="370" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584641949248">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="370" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1584641949248" />
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584648902959">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1584648902959" />
+    <state x="316" y="50" key="FileChooserDialogImpl" timestamp="1584649539500">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="316" y="50" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1584649539500" />
+    <state x="336" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1584092280093">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="336" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1584092280093" />
+    <state x="375" y="234" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1584554376241">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="375" y="234" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1584554376241" />
+    <state x="412" y="44" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1584642233093">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="412" y="44" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680@0.0.1280.680" timestamp="1584642233093" />
+  </component>
+</project>

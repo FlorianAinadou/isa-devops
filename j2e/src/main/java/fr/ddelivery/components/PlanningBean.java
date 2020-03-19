@@ -1,7 +1,7 @@
 package fr.ddelivery.components;
-import fr.ddelivery.DeliverySystem;
-import fr.ddelivery.Planning;
 import fr.ddelivery.entities.Delivery;
+import fr.ddelivery.interfaces.DeliverySystem;
+import fr.ddelivery.interfaces.Planning;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
@@ -13,7 +13,7 @@ public class PlanningBean implements Planning {
     protected DeliverySystem delivery;
 
     @Override
-    public String receiveHello() {
+    public Delivery receiveDelivery() {
         return delivery.createDelivery();
     }
 }

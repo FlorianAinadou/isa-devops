@@ -6,4 +6,9 @@ public class Colis
     
     private ColisState colisState;
     private Carrier carrier;
+
+    public Colis(String reference) {
+        this.reference = reference;
+        this.colisState = ColisState.stored;
+    }
 }
