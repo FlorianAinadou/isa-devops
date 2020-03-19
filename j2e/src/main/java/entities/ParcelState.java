@@ -1,6 +1,6 @@
 package entities;
 
-public enum PackageState
+public enum ParcelState
 {
     stored, charger, arrived
 }

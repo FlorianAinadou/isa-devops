@@ -1,6 +1,7 @@
 package components;
 
 import entities.Delivery;
+import entities.Parcel;
 
 import javax.ejb.EJB;
 
@@ -8,6 +9,6 @@ import javax.ejb.EJB;
 
 public interface Planning {
     boolean addDelivery(Delivery delivery);
-    Package getPackage( String packageReference);
+    Parcel getParcel(String packageReference);
 
 }

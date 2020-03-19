@@ -2,6 +2,7 @@ package components.plannings;
 
 import components.Planning;
 import entities.Delivery;
+import entities.Parcel;
 
 public abstract class AbstractPlanningBean implements Planning {
 
@@ -12,7 +13,7 @@ public abstract class AbstractPlanningBean implements Planning {
     }
 
     @Override
-    public Package getPackage(String packageReference) {
+    public Parcel getParcel(String packageReference) {
         return null;
     }
 }

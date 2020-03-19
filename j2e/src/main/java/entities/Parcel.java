@@ -1,23 +1,24 @@
 package entities;
 
-public class Package
+public class Parcel
 {
     private final String reference;
-    private final PackageState packageState;
+    private final ParcelState parcelState;
     private final Carrier carrier;
 
-    public Package(String reference, PackageState packageState, Carrier carrier){
+    public Parcel(String reference, ParcelState parcelState, Carrier carrier){
         this.reference = reference;
-        this.packageState = packageState;
+        this.parcelState = parcelState;
         this.carrier = carrier;
+
     }
 
     public Carrier getCarrier() {
         return carrier;
     }
 
-    public PackageState getPackageState() {
-        return packageState;
+    public ParcelState getParcelState() {
+        return parcelState;
     }
 
     public String getReference() {

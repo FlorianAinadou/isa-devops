@@ -1,5 +1,7 @@
 package webservice;
 
+import entities.Parcel;
+
 import javax.ejb.EJB;
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -11,8 +13,10 @@ import java.util.Date;
 public interface PlanningWebService {
 
     @WebMethod
-    @WebResult (name="package")
-    void getPackage (@WebParam(name = "packageReference") String packageReference);
+    @WebResult(name = "parcel")
+    default Parcel getParcel(@WebParam(name = "parcelReference") String parcelReference) {
+        return null;
+    }
 
 
 }

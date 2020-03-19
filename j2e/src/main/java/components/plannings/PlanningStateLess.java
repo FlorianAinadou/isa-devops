@@ -1,6 +1,7 @@
 package components.plannings;
 
 import entities.Delivery;
+import entities.Parcel;
 import utils.Database;
 
 import javax.ejb.EJB;
@@ -16,7 +17,7 @@ public class PlanningStateLess extends AbstractPlanningBean {
     }
 
     @Override
-    public Package getPackage(String packageReference){
-        return database.getPackage(packageReference);
+    public Parcel getParcel(String packageReference){
+        return database.getParcel(packageReference);
     }
 }

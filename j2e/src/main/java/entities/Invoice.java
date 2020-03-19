@@ -10,5 +10,5 @@ public class Invoice
     private LocalDate date;
     private boolean isPaid;
 
-    private HashSet<Package> colis;
+    private HashSet<Parcel> colis;
 }

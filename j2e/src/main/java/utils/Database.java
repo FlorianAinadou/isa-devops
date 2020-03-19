@@ -1,5 +1,8 @@
 package utils;
+import entities.Carrier;
 import entities.Delivery;
+import entities.Parcel;
+import entities.ParcelState;
 
 import javax.ejb.Singleton;
 import java.util.HashMap;
@@ -13,8 +16,14 @@ import java.util.Map;
 public class Database {
     private int nbDelivery;
 
-    private Map< String, Package> availablePackages= new HashMap<>();
+    private Map< String, Parcel> availablePackages= new HashMap<>();
     private Map<Integer, Delivery> deliveriesList = new HashMap<>();
+
+    public Database(){
+        Carrier carrier= new Carrier();
+        Parcel p= new Parcel("abcd", ParcelState.stored, carrier );
+        availablePackages.put("abcd", p);
+    }
 
     public int getNbDelivery() {
         return nbDelivery;
@@ -30,7 +39,7 @@ public class Database {
         nbDelivery=nbDelivery+1;
     }
 
-    public Package getPackage(String packageReference){
+    public Parcel getParcel(String packageReference){
         return availablePackages.get(packageReference);
     }
 

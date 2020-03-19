@@ -6,5 +6,5 @@ public class Carrier
 {
     private String id;
     
-    private HashSet<Package> colis;
+    private HashSet<Parcel> colis;
 }

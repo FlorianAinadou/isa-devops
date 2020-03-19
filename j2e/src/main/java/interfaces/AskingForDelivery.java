@@ -1,8 +1,8 @@
 package interfaces;
 
-import entities.Package;
+import entities.Parcel;
 import entities.Delivery;
 
 public interface AskingForDelivery {
-    Delivery createDelivery(Package aPackage);
+    Delivery createDelivery(Parcel aParcel);
 }
