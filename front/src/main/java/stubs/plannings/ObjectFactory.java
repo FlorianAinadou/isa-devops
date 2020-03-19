@@ -1,5 +1,5 @@
 
-package stubs.planning._8080;
+package stubs.plannings;
 
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;
@@ -10,7 +10,7 @@ import javax.xml.namespace.QName;
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
- * generated in the localhost._8080 package. 
+ * generated in the stubs.plannings package. 
  * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
@@ -26,20 +26,38 @@ public class ObjectFactory {
 
     private final static QName _GetParcelResponse_QNAME = new QName("http://localhost:8080", "getParcelResponse");
     private final static QName _GetParcel_QNAME = new QName("http://localhost:8080", "getParcel");
+    private final static QName _InitDatabase_QNAME = new QName("http://localhost:8080", "initDatabase");
+    private final static QName _InitDatabaseResponse_QNAME = new QName("http://localhost:8080", "initDatabaseResponse");
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: localhost._8080
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: stubs.plannings
      * 
      */
     public ObjectFactory() {
     }
 
     /**
-     * Create an instance of {@link GetParcel }
+     * Create an instance of {@link InitDatabase }
      * 
      */
-    public GetParcel createGetParcel() {
-        return new GetParcel();
+    public InitDatabase createInitDatabase() {
+        return new InitDatabase();
+    }
+
+    /**
+     * Create an instance of {@link Parcel }
+     * 
+     */
+    public Parcel createParcel() {
+        return new Parcel();
+    }
+
+    /**
+     * Create an instance of {@link InitDatabaseResponse }
+     * 
+     */
+    public InitDatabaseResponse createInitDatabaseResponse() {
+        return new InitDatabaseResponse();
     }
 
     /**
@@ -51,11 +69,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Parcel }
+     * Create an instance of {@link GetParcel }
      * 
      */
-    public Parcel createParcel() {
-        return new Parcel();
+    public GetParcel createGetParcel() {
+        return new GetParcel();
     }
 
     /**
@@ -74,6 +92,24 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://localhost:8080", name = "getParcel")
     public JAXBElement<GetParcel> createGetParcel(GetParcel value) {
         return new JAXBElement<GetParcel>(_GetParcel_QNAME, GetParcel.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link InitDatabase }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://localhost:8080", name = "initDatabase")
+    public JAXBElement<InitDatabase> createInitDatabase(InitDatabase value) {
+        return new JAXBElement<InitDatabase>(_InitDatabase_QNAME, InitDatabase.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link InitDatabaseResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://localhost:8080", name = "initDatabaseResponse")
+    public JAXBElement<InitDatabaseResponse> createInitDatabaseResponse(InitDatabaseResponse value) {
+        return new JAXBElement<InitDatabaseResponse>(_InitDatabaseResponse_QNAME, InitDatabaseResponse.class, null, value);
     }
 
 }

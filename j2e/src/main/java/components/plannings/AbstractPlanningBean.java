@@ -12,8 +12,5 @@ public abstract class AbstractPlanningBean implements Planning {
         return false;
     }
 
-    @Override
-    public Parcel getParcel(String packageReference) {
-        return null;
-    }
+
 }

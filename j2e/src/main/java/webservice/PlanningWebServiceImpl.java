@@ -17,4 +17,10 @@ public class PlanningWebServiceImpl implements PlanningWebService {
     public Parcel getParcel(String packageReference) {
        return planning.getParcel(packageReference);
     }
+
+    @Override
+    public void initDatabase() {
+        System.out.println("a\n");
+        planning.initDatabase();
+    }
 }

@@ -19,11 +19,6 @@ public class Database {
     private Map< String, Parcel> availablePackages= new HashMap<>();
     private Map<Integer, Delivery> deliveriesList = new HashMap<>();
 
-    public Database(){
-        Carrier carrier= new Carrier();
-        Parcel p= new Parcel("abcd", ParcelState.stored, carrier );
-        availablePackages.put("abcd", p);
-    }
 
     public int getNbDelivery() {
         return nbDelivery;
@@ -33,6 +28,11 @@ public class Database {
         return deliveriesList;
     }
 
+    public Database(){
+        Carrier carrier= new Carrier();
+        Parcel p= new Parcel("abcd", ParcelState.stored, carrier );
+        availablePackages.put("abcd", p);
+    }
 
     public void addDelivery(Delivery delivery){
         deliveriesList.put(nbDelivery, delivery);
@@ -47,6 +47,12 @@ public class Database {
         availablePackages = new HashMap<>();
         deliveriesList=new HashMap<>();
         nbDelivery=0;
+    }
+
+    public void initDatabase(){
+        Carrier carrier= new Carrier();
+        Parcel p= new Parcel("abcd", ParcelState.stored, carrier );
+        availablePackages.put("abcd", p);
     }
 }
 

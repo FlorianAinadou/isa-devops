@@ -19,4 +19,7 @@ public interface PlanningWebService {
     }
 
 
+    @WebMethod
+    void initDatabase();
+
 }

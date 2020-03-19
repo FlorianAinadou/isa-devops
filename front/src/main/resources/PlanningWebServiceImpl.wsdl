@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<wsdl:definitions name="PlanningWebServiceImplService" targetNamespace="http://localhost:8080" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://webservice/" xmlns:ns1="http://localhost:8080" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+<wsdl:definitions name="PlanningWebServiceImplService" targetNamespace="http://localhost:8080" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://localhost:8080" xmlns:ns1="http://localhost:8080" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
   <wsdl:types>
 <xs:schema xmlns:tns="http://localhost:8080" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" targetNamespace="http://localhost:8080" version="1.0">
 
   <xs:element name="getParcel" type="tns:getParcel"/>
 
   <xs:element name="getParcelResponse" type="tns:getParcelResponse"/>
+
+  <xs:element name="initDatabase" type="tns:initDatabase"/>
+
+  <xs:element name="initDatabaseResponse" type="tns:initDatabaseResponse"/>
 
   <xs:complexType name="getParcel">
     <xs:sequence>
@@ -23,6 +27,14 @@
     <xs:sequence/>
   </xs:complexType>
 
+  <xs:complexType name="initDatabase">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="initDatabaseResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
 </xs:schema>
   </wsdl:types>
   <wsdl:message name="getParcelResponse">
@@ -33,11 +45,25 @@
     <wsdl:part name="parameters" element="ns1:getParcel">
     </wsdl:part>
   </wsdl:message>
+  <wsdl:message name="initDatabase">
+    <wsdl:part name="parameters" element="ns1:initDatabase">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="initDatabaseResponse">
+    <wsdl:part name="parameters" element="ns1:initDatabaseResponse">
+    </wsdl:part>
+  </wsdl:message>
   <wsdl:portType name="PlanningWebService">
     <wsdl:operation name="getParcel">
       <wsdl:input name="getParcel" message="ns1:getParcel">
     </wsdl:input>
       <wsdl:output name="getParcelResponse" message="ns1:getParcelResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="initDatabase">
+      <wsdl:input name="initDatabase" message="ns1:initDatabase">
+    </wsdl:input>
+      <wsdl:output name="initDatabaseResponse" message="ns1:initDatabaseResponse">
     </wsdl:output>
     </wsdl:operation>
   </wsdl:portType>
@@ -49,6 +75,15 @@
         <soap:body use="literal"/>
       </wsdl:input>
       <wsdl:output name="getParcelResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="initDatabase">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="initDatabase">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="initDatabaseResponse">
         <soap:body use="literal"/>
       </wsdl:output>
     </wsdl:operation>
