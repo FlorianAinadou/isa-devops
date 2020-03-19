@@ -139,6 +139,7 @@
             <version>${versions.tomee}</version>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
     <parent>

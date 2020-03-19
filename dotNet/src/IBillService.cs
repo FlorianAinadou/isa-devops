@@ -8,24 +8,24 @@ using Partner.Data;
 namespace Partner.Service {
 
   [ServiceContract]
-  public interface IPaymentService
+  public interface IBillService
   {
     [OperationContract]
     [WebInvoke( Method = "POST", UriTemplate = "mailbox",
                 RequestFormat = WebMessageFormat.Json,
                 ResponseFormat = WebMessageFormat.Json)]
-    int ReceiveRequest(PaymentRequest request);
+    int ReceiveRequest(BillRequest request);
 
 
     [OperationContract]
-    [WebInvoke( Method = "GET", UriTemplate = "payments/{identifier}",
+    [WebInvoke( Method = "GET", UriTemplate = "bills/{identifier}",
                 ResponseFormat = WebMessageFormat.Json)]
-    Payment FindPaymentById(int identifier);
+    Bill FindBillById(int identifier);
 
     [OperationContract]
-    [WebInvoke( Method = "GET", UriTemplate = "payments",
+    [WebInvoke( Method = "GET", UriTemplate = "bills",
                 ResponseFormat = WebMessageFormat.Json)]
-    List<int> GetAllPaymentIds();
+    List<int> GetAllBillIds();
 
 }
 

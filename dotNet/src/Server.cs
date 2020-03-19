@@ -32,10 +32,10 @@ public class Server
     string url = "http://" + "localhost" + ":" + Port;
 
     WebHttpBinding b = new WebHttpBinding();
-    Host = new WebServiceHost(typeof(PaymentService), new Uri (url));
+    Host = new WebServiceHost(typeof(BillService), new Uri (url));
 
     // Adding the service to the host
-    Host.AddServiceEndpoint(typeof(IPaymentService), b, "");
+    Host.AddServiceEndpoint(typeof(IBillService), b, "");
 
     // Staring the Host server
     Host.Open();

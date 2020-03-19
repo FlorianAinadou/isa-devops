@@ -11,22 +11,23 @@ namespace Partner.Service {
   // The service is stateful, as it is only a Proof of Concept.
   // Services should be stateless, this is for demonstration purpose only.
   [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
-  public class PaymentService : IPaymentService
+  public class BillService : IBillService
   {
     private const string MagicKey = "896983"; // ASCII code for "YES"
 
-    private Dictionary<int, Payment> accounts = new Dictionary<int, Payment>();
+    private Dictionary<int, Bill> accounts = new Dictionary<int, Bill>();
     private int counter;
 
-    public int ReceiveRequest(PaymentRequest request)
+    public int ReceiveRequest(BillRequest request)
     {
       Console.WriteLine("ReceiveRequest: " + request);
-      var payment = BuildPayment(request);
-      accounts.Add(counter, payment);
+      var bill = BuildBill(request);
+      Console.WriteLine("Amount of the bill : " + bill.Amount);
+      accounts.Add(counter, bill);
       return counter;
     }
 
-    public Payment FindPaymentById(int identifier)
+    public Bill FindBillById(int identifier)
     {
       if(!accounts.ContainsKey(identifier)) {
         WebOperationContext.Current.OutgoingResponse.StatusCode = HttpStatusCode.NotFound;
@@ -35,24 +36,18 @@ namespace Partner.Service {
       return accounts[identifier];
     }
 
-    public List<int> GetAllPaymentIds()
+    public List<int> GetAllBillIds()
     {
       return accounts.Keys.ToList();
     }
 
-    private Payment BuildPayment(PaymentRequest request)
+    private Bill BuildBill(BillRequest request)
     {
-      var payment = new Payment();
-      payment.Identifier = counter++;
-      payment.CreditCard = request.CreditCard;
-      payment.Amount = request.Amount;
-      if (request.CreditCard.Contains(MagicKey)) {
-        payment.Status = PaymentStatus.Ok;
-      } else {
-        payment.Status = PaymentStatus.Ko;
-      }
-      payment.Date = DateTime.Now.ToString();
-      return payment;
+      var bill = new Bill();
+      bill.Identifier = counter++;
+      bill.Amount = request.Amount;
+      bill.Date = DateTime.Now.ToString();
+      return bill;
     }
 
   }

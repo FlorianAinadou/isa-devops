@@ -3,43 +3,38 @@ using System;
 
 namespace Partner.Data {
 
-  [DataContract(Namespace = "http://partner/external/payment/data/",
-                Name = "PaymentRequest")]
-  public class PaymentRequest
+  [DataContract(Namespace = "http://partner/external/bill/data/",
+                Name = "BillRequest")]
+  public class BillRequest
   {
-    [DataMember]
-    public string CreditCard { get; set; }
 
     [DataMember]
     public double Amount { get; set; }
 
     override public string ToString()
     {
-      return "PaymentRequest[" + CreditCard + ", " + Amount + "]";
+      return "BillRequest[" + Amount + "]";
     }
   }
 
-  [DataContract(Namespace = "http://partner/external/payment/data/",
-                Name = "Payment")]
-  public class Payment
+  [DataContract(Namespace = "http://partner/external/bill/data/",
+                Name = "Bill")]
+  public class Bill
   {
     [DataMember]
     public int Identifier { get; set; }
 
     [DataMember]
-    public string CreditCard { get; set; }
-
-    [DataMember]
     public double Amount { get; set; }
 
     [DataMember]
-    public PaymentStatus Status { get; set; }
+    public BillStatus Status { get; set; }
 
     [DataMember]
     public string Date { get; set; }
 
   }
 
-  public enum PaymentStatus { Ok, Ko }
+  public enum BillStatus { Ok, Ko }
 
 }
