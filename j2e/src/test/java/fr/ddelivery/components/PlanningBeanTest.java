@@ -1,10 +1,10 @@
 package fr.ddelivery.components;
 
-import fr.ddelivery.Delivery;
+import fr.ddelivery.DeliverySystem;
+import fr.ddelivery.Planning;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
-import org.jboss.shrinkwrap.api.asset.ClassLoaderAsset;
 import org.jboss.shrinkwrap.api.asset.EmptyAsset;
 import org.jboss.shrinkwrap.api.spec.JavaArchive;
 import org.jboss.shrinkwrap.api.spec.WebArchive;
@@ -16,18 +16,19 @@ import javax.ejb.EJB;
 import static org.junit.Assert.*;
 
 @RunWith(Arquillian.class)
-public class DeliverySystemBeanTest {
+public class PlanningBeanTest {
     @Deployment
     public static WebArchive createDeployment() {
         return ShrinkWrap.create(WebArchive.class)
                 .addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml")
                 .addPackage(PlanningBean.class.getPackage())
-                .addPackage(DeliverySystemBean.class.getPackage());
+                .addPackage(DeliverySystemSystemBean.class.getPackage());
     }
-    @EJB private Delivery delivery;
+    @EJB
+    private Planning planning;
 
     @Test
     public void receiveHello() {
-        assertEquals("Hello", delivery.receiveHello());
+        assertEquals("Hello", planning.receiveHello());
     }
 }

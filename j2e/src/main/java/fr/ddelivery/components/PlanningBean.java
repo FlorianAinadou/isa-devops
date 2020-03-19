@@ -1,16 +1,19 @@
 package fr.ddelivery.components;
+import fr.ddelivery.DeliverySystem;
 import fr.ddelivery.Planning;
+import fr.ddelivery.entities.Delivery;
 
+import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
 @Stateless
 public class PlanningBean implements Planning {
 
-
-    protected String mess ="Hello";
+    @EJB
+    protected DeliverySystem delivery;
 
     @Override
-    public String sendHello() {
-        return mess;
+    public String receiveHello() {
+        return delivery.createDelivery();
     }
 }
