@@ -9,6 +9,6 @@ public class Delivery
     private String address;
     private LocalDateTime date;
 
-    private Colis colis;
+    private Parcel aParcel;
     private Optional<Drone> drone;
 }
