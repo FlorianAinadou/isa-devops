@@ -27,6 +27,10 @@ public class Database {
         return nbDelivery;
     }
 
+    public int getNbParcel(){
+        return availablePackages.size();
+    }
+
     public Map<Integer, Delivery> getDeliveriesList() {
         return deliveriesList;
     }

@@ -3,6 +3,7 @@ package commands;
 
 import api.PublicAPI;
 import cli.framework.Command;
+import stubs.delivery.Parcel;
 
 import java.util.List;
 
@@ -17,10 +18,14 @@ public class getParcel extends Command<PublicAPI> {
 
     @Override
     public void execute() throws Exception {
+        Parcel parcel = null;
         try {
-            System.out.println(shell.system.deliverySystemWebService.getParcel(reference));
+            parcel=shell.system.deliverySystemWebService.getParcel(reference);
         } catch (Exception e) {
             System.out.println("Not available");
+        }
+        if(parcel!=null){
+            System.out.println(parcel);
         }
 
     }

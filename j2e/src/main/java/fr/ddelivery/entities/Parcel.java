@@ -24,4 +24,14 @@ public class Parcel
     public String getReference() {
         return reference;
     }
+
+
+    @Override
+    public String toString() {
+        return "Parcel{" +
+                "reference='" + reference + '\'' +
+                ", parcelState=" + parcelState +
+                ", carrier=" + carrier +
+                '}';
+    }
 }
