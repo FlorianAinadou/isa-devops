@@ -22,7 +22,6 @@
     <modules>
         <module>j2e</module>
         <module>front</module>
-        <module>dotNet</module>
     </modules>
 
 </project>

@@ -37,14 +37,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link InitDatabaseResponse }
-     * 
-     */
-    public InitDatabaseResponse createInitDatabaseResponse() {
-        return new InitDatabaseResponse();
-    }
-
-    /**
      * Create an instance of {@link GetParcel }
      * 
      */
@@ -61,6 +53,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link Parcel }
+     * 
+     */
+    public Parcel createParcel() {
+        return new Parcel();
+    }
+
+    /**
      * Create an instance of {@link InitDatabase }
      * 
      */
@@ -69,11 +69,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Parcel }
+     * Create an instance of {@link InitDatabaseResponse }
      * 
      */
-    public Parcel createParcel() {
-        return new Parcel();
+    public InitDatabaseResponse createInitDatabaseResponse() {
+        return new InitDatabaseResponse();
     }
 
     /**

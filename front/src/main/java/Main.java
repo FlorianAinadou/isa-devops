@@ -1,6 +1,8 @@
 
 import api.PublicAPI;
 import cli.framework.Shell;
+import commands.Bill;
+import commands.Bye;
 import commands.getParcel;
 import commands.initDatabase;
 
@@ -15,6 +17,8 @@ public class Main extends Shell<PublicAPI> {
         register(
                 //getting parcel from reference
                 getParcel.class,
+                Bye.class,
+                Bill.class,
                 //init database
                 initDatabase.class
                 /*
