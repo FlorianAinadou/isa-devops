@@ -6,6 +6,7 @@ import fr.ddelivery.entities.Parcel;
 import fr.ddelivery.entities.ParcelState;
 
 import javax.ejb.Singleton;
+import javax.ejb.Startup;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,6 +15,7 @@ import java.util.Map;
  * This class must represent the database which will contain all our data
  */
 @Singleton
+@Startup
 public class Database {
     private int nbDelivery;
 
@@ -46,8 +48,8 @@ public class Database {
     }
 
     public void initDatabase(){
-        Parcel p= new Parcel("abcd");
-        availablePackages.put("abcd", p);
+        Parcel p= new Parcel("1");
+        availablePackages.put("1", p);
     }
 }
 

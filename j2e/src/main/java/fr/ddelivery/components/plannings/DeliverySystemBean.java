@@ -35,7 +35,7 @@ public class DeliverySystemBean extends AbstractDeliverySystemBean implements De
 
     @Override
     public Delivery createDelivery() {
-        LocalDateTime localDateTime = LocalDateTime.now();
+        LocalDateTime localDateTime = LocalDateTime.of(2020,12,12,12,12);
         Delivery delivery = new Delivery("address", localDateTime, new Parcel("1"));
         addDelivery(delivery);
         return delivery;

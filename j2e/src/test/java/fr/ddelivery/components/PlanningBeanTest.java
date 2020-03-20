@@ -3,9 +3,11 @@ package fr.ddelivery.components;
 import fr.ddelivery.components.plannings.DeliverySystemBean;
 import fr.ddelivery.entities.Delivery;
 import fr.ddelivery.interfaces.Planning;
+import fr.ddelivery.utils.Database;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
+import org.jboss.shrinkwrap.api.asset.ClassLoaderAsset;
 import org.jboss.shrinkwrap.api.asset.EmptyAsset;
 import org.jboss.shrinkwrap.api.spec.WebArchive;
 import org.junit.Test;
@@ -21,8 +23,9 @@ public class PlanningBeanTest {
     public static WebArchive createDeployment() {
         return ShrinkWrap.create(WebArchive.class)
                 .addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml")
-                .addPackage(PlanningBean.class.getPackage())
-                .addPackage(DeliverySystemBean.class.getPackage());
+                .addPackage(Database.class.getPackage())
+                .addPackage(DeliverySystemBean.class.getPackage())
+                .addPackage(PlanningBean.class.getPackage());
     }
     @EJB
     private Planning planning;
