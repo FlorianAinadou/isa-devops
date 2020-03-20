@@ -73,9 +73,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>${versions.maven.compiler}</version>
                 <configuration>
-                    <source>8</source>
-                    <target>8</target>
+                    <source>${versions.java}</source>
+                    <target>${versions.java}</target>
                 </configuration>
             </plugin>
         </plugins>

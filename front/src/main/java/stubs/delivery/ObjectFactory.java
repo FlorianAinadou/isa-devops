@@ -37,6 +37,30 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link InitDatabaseResponse }
+     * 
+     */
+    public InitDatabaseResponse createInitDatabaseResponse() {
+        return new InitDatabaseResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetParcel }
+     * 
+     */
+    public GetParcel createGetParcel() {
+        return new GetParcel();
+    }
+
+    /**
+     * Create an instance of {@link GetParcelResponse }
+     * 
+     */
+    public GetParcelResponse createGetParcelResponse() {
+        return new GetParcelResponse();
+    }
+
+    /**
      * Create an instance of {@link InitDatabase }
      * 
      */
@@ -50,30 +74,6 @@ public class ObjectFactory {
      */
     public Parcel createParcel() {
         return new Parcel();
-    }
-
-    /**
-     * Create an instance of {@link InitDatabaseResponse }
-     * 
-     */
-    public InitDatabaseResponse createInitDatabaseResponse() {
-        return new InitDatabaseResponse();
-    }
-
-    /**
-     * Create an instance of {@link GetParcelResponse }
-     * 
-     */
-    public GetParcelResponse createGetParcelResponse() {
-        return new GetParcelResponse();
-    }
-
-    /**
-     * Create an instance of {@link GetParcel }
-     * 
-     */
-    public GetParcel createGetParcel() {
-        return new GetParcel();
     }
 
     /**
