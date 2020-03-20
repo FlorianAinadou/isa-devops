@@ -19,6 +19,19 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>22b9ae4ef899-releases</name>
+            <url>http://90.9.84.118:8081/artifactory/libs-develop</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>22b9ae4ef899-snapshots</name>
+            <url>http://90.9.84.118:8081/artifactory/libs-develop</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <modules>
         <module>j2e</module>
         <module>front</module>
