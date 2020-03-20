@@ -52,6 +52,7 @@ public class Database {
     }
 
     public void initDatabase(){
+        availablePackages= new HashMap<>();
         Parcel p= new Parcel("1");
         availablePackages.put("1", p);
     }

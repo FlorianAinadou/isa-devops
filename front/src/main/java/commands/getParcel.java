@@ -25,7 +25,10 @@ public class getParcel extends Command<PublicAPI> {
             System.out.println("Not available");
         }
         if(parcel!=null){
-            System.out.println(parcel);
+            System.out.println(parcel.toString());
+        }
+        else{
+            System.out.println( "Not available");
         }
 
     }
