@@ -36,6 +36,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link Exception }
+     * 
+     */
+    public Exception createException() {
+        return new Exception();
+    }
+
+    /**
      * Create an instance of {@link SendBillResponse }
      * 
      */
@@ -49,14 +57,6 @@ public class ObjectFactory {
      */
     public SendBill createSendBill() {
         return new SendBill();
-    }
-
-    /**
-     * Create an instance of {@link Exception }
-     * 
-     */
-    public Exception createException() {
-        return new Exception();
     }
 
     /**
