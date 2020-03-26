@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="BillServiceImplService" targetNamespace="http://localhost:8080/bill" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://localhost:8080/bill" xmlns:ns1="http://localhost:8080/bill" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+<xs:schema xmlns:tns="http://localhost:8080/bill" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://localhost:8080/bill">
+  <xs:element name="sendBill" type="tns:sendBill"/>
+  <xs:element name="sendBillResponse" type="tns:sendBillResponse"/>
+  <xs:complexType name="sendBill">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bill_amount" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="sendBillResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cart_contents" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Exception" type="tns:Exception"/>
+  <xs:complexType name="Exception">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="Exception">
+    <wsdl:part name="Exception" element="ns1:Exception">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="sendBill">
+    <wsdl:part name="parameters" element="ns1:sendBill">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="sendBillResponse">
+    <wsdl:part name="parameters" element="ns1:sendBillResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="BillService">
+    <wsdl:operation name="sendBill">
+      <wsdl:input name="sendBill" message="ns1:sendBill">
+    </wsdl:input>
+      <wsdl:output name="sendBillResponse" message="ns1:sendBillResponse">
+    </wsdl:output>
+      <wsdl:fault name="Exception" message="ns1:Exception">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BillServiceImplServiceSoapBinding" type="ns1:BillService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="sendBill">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="sendBill">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="sendBillResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BillServiceImplService">
+    <wsdl:port name="BillServiceImplPort" binding="ns1:BillServiceImplServiceSoapBinding">
+      <soap:address location="http://localhost:9090/BillServiceImplPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
