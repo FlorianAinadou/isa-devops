@@ -3,8 +3,6 @@ import api.PublicAPI;
 import cli.framework.Shell;
 import commands.Bill;
 import commands.Bye;
-import commands.getParcel;
-import commands.initDatabase;
 
 public class Main extends Shell<PublicAPI> {
 
@@ -16,11 +14,9 @@ public class Main extends Shell<PublicAPI> {
         // Registering the command available for the user
         register(
                 //getting parcel from reference
-                getParcel.class,
                 Bye.class,
-                Bill.class,
+                Bill.class
                 //init database
-                initDatabase.class
                 /*
                 // Getting out of here
                 Bye.class,
