@@ -27,6 +27,14 @@
         <module>serviceClient</module>
     </modules>
 
+    <distributionManagement>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>1b6e49f4a80d-snapshots</name>
+            <url>http://isadevopsteamj.ddns.net:8081/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <parent>
         <groupId>fr.unice.polytech.isa</groupId>
         <artifactId>parent-project</artifactId>
