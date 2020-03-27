@@ -1,4 +1,4 @@
-package fr.ddelivery.components.plannings;
+package fr.ddelivery.components.deliverySystem;
 
 
 import fr.ddelivery.entities.Delivery;
@@ -26,6 +26,11 @@ public class DeliverySystemBean extends AbstractDeliverySystemBean implements De
     @Override
     public Parcel getParcel(String packageReference){
         return database.getParcel(packageReference);
+    }
+
+    @Override
+    public Delivery nextDelivery() {
+        return database.nextDelivery();
     }
 
     @Override
