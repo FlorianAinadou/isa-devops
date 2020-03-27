@@ -1,5 +1,6 @@
 package fr.ddelivery.webservice;
 
+import fr.ddelivery.entities.Delivery;
 import fr.ddelivery.entities.Parcel;
 import fr.ddelivery.interfaces.DeliverySystem;
 
@@ -22,7 +23,12 @@ public class DeliverySystemWebServiceImpl implements DeliverySystemWebService {
 
     @Override
     public void initDatabase() {
-        System.out.println("a\n");
         deliverySystem.initDatabase();
     }
+
+    @Override
+    public Delivery getNextDelivery() {
+        return deliverySystem.nextDelivery();
+    }
+
 }

@@ -2,7 +2,6 @@ package fr.ddelivery.components;
 
 
 
-import fr.ddelivery.entities.Parcel;
 import fr.ddelivery.interfaces.DeliverySystem;
 import fr.ddelivery.utils.Database;
 import org.jboss.arquillian.container.test.api.Deployment;
@@ -24,7 +23,7 @@ public class DeliverySystemTest {
         return ShrinkWrap.create(JavaArchive.class)
                 .addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml")
                 .addPackage(Database.class.getPackage())
-                .addPackage(fr.ddelivery.components.plannings.DeliverySystemBean.class.getPackage())
+                .addPackage(DeliverySystemBean.class.getPackage())
                 .addPackage(PlanningBean.class.getPackage())
                 .addPackage(BillingServiceBean.class.getPackage());
     }

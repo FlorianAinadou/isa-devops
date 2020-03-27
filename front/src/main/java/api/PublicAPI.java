@@ -16,7 +16,7 @@ public class PublicAPI {
     public BillService billingWebService;
 
     public PublicAPI(String host, String port){
-        URL wsdlLocation = PublicAPI.class.getResource("/PlanningWebServiceImpl.wsdl");
+        URL wsdlLocation = PublicAPI.class.getResource("DeliverySystemWebServiceImpl.wsdl");
         DeliverySystemWebServiceImplService factory = new DeliverySystemWebServiceImplService();
         deliverySystemWebService = factory.getDeliverySystemWebServiceImplPort();
         String address= "http://" + host + ":" + port + "/j2e-1.0-SNAPSHOT/webservices/PlanningWs" ;

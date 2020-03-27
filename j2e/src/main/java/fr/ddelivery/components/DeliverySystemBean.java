@@ -1,4 +1,4 @@
-package fr.ddelivery.components.deliverySystem;
+package fr.ddelivery.components;
 
 
 import fr.ddelivery.entities.Delivery;
@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Stateless(name = "planning-stateless")
-public class DeliverySystemBean extends AbstractDeliverySystemBean implements DeliverySystem {
+public class DeliverySystemBean implements DeliverySystem {
 
     @EJB Database database;
 

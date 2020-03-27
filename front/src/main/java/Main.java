@@ -1,10 +1,7 @@
 
 import api.PublicAPI;
 import cli.framework.Shell;
-import commands.Bill;
-import commands.Bye;
-import commands.getParcel;
-import commands.initDatabase;
+import commands.*;
 
 public class Main extends Shell<PublicAPI> {
 
@@ -20,7 +17,9 @@ public class Main extends Shell<PublicAPI> {
                 Bye.class,
                 //init database
                 initDatabase.class,
-                Bill.class
+                Bill.class,
+                //return nextDelivery
+                NextDelivery.class
                 /*
                 // Getting out of here
                 Bye.class,

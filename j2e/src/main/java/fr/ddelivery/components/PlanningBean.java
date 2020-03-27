@@ -16,4 +16,6 @@ public class PlanningBean implements Planning {
     public Delivery receiveDelivery() {
         return delivery.createDelivery();
     }
+
+
 }

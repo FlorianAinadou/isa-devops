@@ -1,5 +1,6 @@
 package fr.ddelivery.webservice;
 
+import fr.ddelivery.entities.Delivery;
 import fr.ddelivery.entities.Parcel;
 
 import javax.jws.WebMethod;
@@ -11,11 +12,16 @@ import javax.jws.WebService;
 public interface DeliverySystemWebService {
 
     @WebMethod
-    @WebResult(name = "parcel")
+    @WebResult(name = "getParcel")
     public Parcel getParcel(@WebParam(name = "parcelReference") String parcelReference);
 
 
     @WebMethod
-    void initDatabase();
+    public void initDatabase();
+
+    @WebMethod
+    @WebResult(name = "getNextDelivery")
+    public Delivery getNextDelivery();
+
 
 }

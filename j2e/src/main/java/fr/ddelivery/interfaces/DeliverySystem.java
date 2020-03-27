@@ -13,6 +13,7 @@ import java.util.List;
 public interface DeliverySystem {
     boolean addDelivery(Delivery delivery);
     Parcel getParcel(String packageReference);
+    Delivery nextDelivery();
     void initDatabase();
     Delivery createDelivery();
 
