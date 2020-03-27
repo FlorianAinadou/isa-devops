@@ -1,6 +1,7 @@
 
 import api.PublicAPI;
 import cli.framework.Shell;
+import commands.Bill;
 import commands.Bye;
 import commands.getParcel;
 import commands.initDatabase;
@@ -18,7 +19,8 @@ public class Main extends Shell<PublicAPI> {
                 getParcel.class,
                 Bye.class,
                 //init database
-                initDatabase.class
+                initDatabase.class,
+                Bill.class
                 /*
                 // Getting out of here
                 Bye.class,
