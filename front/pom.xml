@@ -88,7 +88,7 @@
                                     <wsdl>${basedir}/src/main/resources/BillServiceImpl.wsdl</wsdl>
                                     <extraargs>
                                         <extraarg>-p</extraarg>
-                                        <extraarg>http://localhost:8080=stubs.billing
+                                        <extraarg>http://localhost:8080/bill=stubs.billing
                                         </extraarg>
                                     </extraargs>
                                 </wsdlOption>
