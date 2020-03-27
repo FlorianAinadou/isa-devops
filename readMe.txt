@@ -58,3 +58,4 @@ Ecrire dans ~/.m2/settings.xml
     <activeProfile>artifactory</activeProfile>
   </activeProfiles>
 </settings>
+
