@@ -19,7 +19,15 @@
       </dependency>
   </dependencies>
 
-  <modules>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>1b6e49f4a80d-snapshots</name>
+            <url>http://isadevopsteamj.ddns.net:8081/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <modules>
     <module>j2e</module>
     <module>front</module>
     <module>dotNet</module>
