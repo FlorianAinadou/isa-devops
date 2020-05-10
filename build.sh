@@ -16,7 +16,7 @@ cd ..
 
 ## Building client
 cd front
-mvn clean install
+mvn clean package
 docker build -t dd-client .
 cd ..
 
