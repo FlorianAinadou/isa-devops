@@ -1,0 +1,15 @@
+[submodule "front"]
+	path = front
+	url = https://github.com/pns-isa-devops/front.git
+[submodule "dotNet"]
+	path = dotNet
+	url = https://github.com/pns-isa-devops/dotNet.git
+[submodule "j2e-entities"]
+	path = j2e-entities
+	url = https://github.com/pns-isa-devops/j2e-entities.git
+[submodule "j2e-otherComponents"]
+	path = j2e-otherComponents
+	url = https://github.com/pns-isa-devops/j2e-otherComponents.git
+[submodule "j2e"]
+	path = j2e
+	url = https://github.com/pns-isa-devops/j2e.git
