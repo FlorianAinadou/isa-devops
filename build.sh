@@ -1,12 +1,12 @@
 #!/bin/bash
 
-## Building client
-cd front
+## Building the j2e system
+cd j2e-entities
 mvn clean install
 cd ..
 
-## Building the j2e system
-cd j2e-entities
+## Building client
+cd front
 mvn clean install
 cd ..
 
